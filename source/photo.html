@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <!-- header__start -->
+  <!-- header__mobile -->
+  <header class="header header-photo">
+    <div class="container">
+      <nav class="header-navigation">
+        <a class="header-navigation__logo logo" href="index.html">
+          <svg class="logo__pic logo__pic--white" width="75" height="22">
+
+          </svg>
+        </a>
+        <button class="header-navigation__trigger" type="button" name="button">
+          <span class="visually-hidden">Меню</span>
+          <span class="header-navigation__trigger-pic navigation__trigger-pic--open">открыть</span>
+          <span class="navigation__trigger-pic navigation__trigger-pic--close">закрыть</span>
+        </button>
+        <ul class="navigation-list navigation-list--active">
+          <li class="navigation__item navigation__item--active"><a class="navigation__link" href="index.html">Главная</a></li>
+          <li class="navigation__item navigation__item--photo"><a class="navigation__link  navigation__link--active" href="photo.html">Фотографии</a></li>
+          <li class="navigation__item navigation__item--draw"><a class="navigation__link" href="form.html">Конкурс</a></li>
+          <li class="navigation__item navigation__item--academy"><a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- main -->
+  <main class="main-photo main-content">
+    <section class="intro intro-photo">
+      <h1 class="intro__title">Фотографии пользователей</h1>
+      <div class="container">
+        <p class="intro__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
+          на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      </div>
+
+    </section>
+    <div class="gallery">
+      <article class="blog blog--best">
+        <span class="blog__marker">Пост дня</span>
+        <img class="blog__img blog__img--first" src="picture.png" alt="user-photo">
+        <div class="container">
+          <h4 class="blog__title">Анна</h4>
+          <span class="blog__timer">(5 минут назад)</span>
+          <p class="blog__text">Прыгать или нет? Напишите
+            в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="blog__counter">
+            <button class="blog__like-btn" type="button" name="button"></button>
+            <a href="#" class="blog__like-link">нравится:215</a>
+          </div>
+        </div>
+      </article>
+      <article class="blog">
+        <div class="container">
+          <img class="blog__img" src="picture.png" alt="user-photo">
+          <h4 class="blog__title">Левон</h4>
+          <span class="blog__timer">(5 часов назад)</span>
+          <p class="blog__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="blog__counter">
+            <button class="blog__like-btn" type="button" name="button"></button>
+            <a href="#" class="blog__like-link">нравится:356</a>
+          </div>
+        </div>
+      </article>
+      <article class="blog">
+        <div class="container">
+          <img class="blog__img" src="picture.png" alt="user-photo">
+          <h4 class="blog__title">Антон</h4>
+          <span class="blog__timer">(12 часов назад)</span>
+          <p class="blog__text">Соседи будут рады!</p>
+          <div class="blog__counter">
+            <button class="blog__like-btn" type="button" name="button"></button>
+            <a href="#" class="blog__like-link">нравится:666</a>
+          </div>
+        </div>
+      </article>
+      <article class="blog">
+        <div class="container">
+          <img class="blog__img" src="picture.png" alt="user-photo">
+          <h4 class="blog__title">Борис</h4>
+          <span class="blog__timer">(20 часов назад)</span>
+          <p class="blog__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="blog__counter">
+            <button class="blog__like-btn" type="button" name="button"></button>
+            <a href="#" class="blog__like-link">нравится:215</a>
+          </div>
+        </div>
+      </article>
+      <article class="blog">
+        <div class="container">
+          <img class="blog__img" src="picture.png" alt="user-photo">
+          <h4 class="blog__title">Сергей</h4>
+          <span class="blog__timer">(25 часов назад)</span>
+          <p class="blog__text">Самая кубанская в мире!</p>
+          <div class="blog__counter">
+            <button class="blog__like-btn" type="button" name="button"></button>
+            <a href="#" class="blog__like-link">нравится:4</a>
+          </div>
+        </div>
+      </article>
+      <article class="blog">
+        <div class="container">
+          <img class="blog__img" src="picture.png" alt="user-photo">
+          <h4 class="blog__title">Максим</h4>
+          <span class="blog__timer">(40 часов назад)</span>
+          <p class="blog__text">Где снег-то?</p>
+          <div class="blog__counter">
+            <button class="blog__like-btn" type="button" name="button"></button>
+            <a href="#" class="blog__like-link">нравится:150</a>
+          </div>
+        </div>
+      </article>
+      <article class="blog">
+        <div class="container">
+          <img class="blog__img" src="picture.png" alt="user-photo">
+          <h4 class="blog__title">Надежда </h4>
+          <span class="blog__timer">(45 часов назад)</span>
+          <p class="blog__autor-text">Всем GM и взаимные лайки!</p>
+          <div class="blog__counter">
+            <button class="blog__like-btn" type="button" name="button"></button>
+            <a class="blog__like-link" href="#">нравится:2560</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="photo-footer footer">
+    <div class="container">
+      <a class="footer__logo logo" href="index.html">
+        <svg class="logo__pic logo__pic--grey" width="75" height="22">
+
+        </svg>
+        <ul class="social-list">
+          <li class="social-list__item"><a class="social-list__link social-list__link--twitter" href="#"><span class="visually-hidden">twitter</span></a></li>
+          <li class="social-list__item"><a class="social-list__link social-list__link--facebook" href="#"><span class="visually-hidden">facebook</span></a></li>
+          <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#"><span class="visually-hidden">youTube</span></a></li>
+        </ul>
+        <a class="footer__developed" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+    </div>
+  </footer>
+  </<body>
+
+</body>
+
+</html>
