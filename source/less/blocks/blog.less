@@ -1,21 +1,50 @@
-.blog{
-  &--best{
-    position: relative;
-    margin: 0;
+.blog {
+  @media(min-width: 700px) {
+    width: 300px;
+    display: flex;
 
+    &--best {
+      display: block;
+      position: relative;
+      margin: 0;
+      width: 100%;
+    }
+  }
+  @media (min-width: 960px) {
+    margin-bottom: 50px;
   }
 }
 
-.blog__inner{
-.inner();
+.blog__inner {
+  .inner();
+  @media (min-width: 960px) {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
-.blog__ordinary{
+
+.blog__ordinary {
   .edges();
+  @media(min-width: 700px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (min-width: 960px) {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
-.blog__best-description{
+
+.blog__best-description {
   .edges();
+  @media(min-width: 700px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-.blog__marker{
+
+.blog__marker {
   position: absolute;
   right: 20px;
   top: 0;
@@ -27,28 +56,66 @@
   line-height: 24px;
   text-transform: uppercase;
   background-color: #d22856;
+  @media(min-width: 700px) {
+    top: 57px;
+  }
 }
 
 .blog__img {
   display: block;
   width: 100%;
   height: auto;
+  display: block;
+
+  &--tab {
+    display: none;
+  }
+
+  &--desk {
+    display: none;
+  }
+  @media(min-width: 700px) {
+    &--tab {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &--mob {
+      display: none;
+    }
+  }
+  @media (min-width: 960px) {
+    &--tab {
+      display: none;
+    }
+
+    &--desk {
+      display: block;
+    }
+  }
 }
 
-.blog-wrapper{
+.blog-wrapper {
   margin-bottom: 20px;
   padding-bottom: 28px;
   padding-top: 0;
   background-color: #f2f2f2;
-
+  @media(min-width: 960px) {
+    margin-bottom: 0;
+  }
 }
 
-.blog__string{
-display: flex;
-padding-top: 23px;
+.blog__string {
+  display: flex;
+  padding-top: 23px;
+  @media(min-width: 700px) {
+    margin-top: 32px;
+    padding-top: 0;
+  }
 }
 
-.blog__title{
+.blog__title {
   padding: 0;
   margin: 0;
   font-family: @font;
@@ -57,7 +124,7 @@ padding-top: 23px;
   color: #283645;
 }
 
-.blog__timer{
+.blog__timer {
   margin: 0;
   padding: 0;
   font-family: @font;
@@ -67,18 +134,31 @@ padding-top: 23px;
   color: #79818a;
 }
 
-.blog__text{
+.blog__text {
   font-family: @font;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  @media(min-width: 700px) {
+    order: 3;
+  }
 }
-.blog__like-btn{
+
+.blog__counter {
+  @media(min-width: 700px) {
+    order: 2;
+    margin-left: auto;
+    margin-top: 32px;
+  }
+}
+
+.blog__like-btn {
   width: 13px;
   height: 12px;
 }
-.blog__like-link{
+
+.blog__like-link {
   font-family: @font;
   font-size: 12px;
   font-weight: 400;
