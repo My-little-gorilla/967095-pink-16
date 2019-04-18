@@ -1,30 +1,65 @@
-.intro{
+.intro {
   margin-bottom: 50px;
+  @media(min-width: 700px) {
+    display: flex;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    margin-bottom: 80px;
+  }
+  @media(min-width: 960px) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    position: relative;
+  }
 }
 
-.intro__inner{
-.columns();
+.intro-photo {
+  display: block;
 }
 
-.intro__wrapper{
+.intro__inner {
+  .columns();
+  @media(min-width: 700px) {
+    background-color: #ffffff;
+
+    &--colorless {
+      background-color: transparent;
+    }
+  }
+}
+
+.intro__wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 0 -57px;
-
+  @media(min-width: 700px) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+  @media (min-width: 960px) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
 }
 
-
-.intro__index{
+.intro__index {
   display: block;
   background: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   min-height: 462px;
 }
 
-.intro__app{
+.intro__app {
   padding-top: 28px;
   padding-bottom: 35px;
   .edges();
   text-align: center;
   background-color: #1d2631;
+  @media(min-width: 700px) {
+    background-color: transparent;
+    padding-bottom: 112px;
+    padding-left: 0;
+  }
+  @media(min-width: 700px) {
+    padding-bottom: 120px;
+  }
 }
 
 .intro__title {
@@ -35,6 +70,28 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+  @media(min-width: 700px) {
+    display: block;
+    width: 348px;
+    padding-top: 81px;
+    padding-bottom: 150px;
+    margin: 0 auto;
+    font-size: 50px;
+  }
+
+  &--unvisible {
+    display: none;
+    @media(min-width: 700px) {
+      display: block;
+      width: 186px;
+      padding-bottom: 39px;
+      padding-top: 103px;
+      color: #ffffff;
+      font-family: @font;
+      font-size: 40px;
+      font-weight: 300;
+    }
+  }
 }
 
 .intro__description {
@@ -46,14 +103,39 @@
   font-weight: 300;
   line-height: 30px;
   text-align: center;
-  &--index{
+  @media(min-width: 700px) {
+    padding: 100px 90px 0;
+    margin: 0;
+    color: #283645;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  @media (min-width: 960px) {
+    width: 600px;
+    color: #283645;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &--index {
     color: #ffffff;
     line-height: 24px;
     margin-top: 29px;
+    @media(min-width: 700px) {
+      width: 300px;
+      font-size: 18px;
+      padding-top: 44px;
+      margin: 0;
+      @media(min-width: 960px) {
+        padding-left: 130px;
+      }
+    }
   }
 }
 
-.intro__download-app{
+.intro__download-app {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -66,5 +148,4 @@
   text-decoration: none;
   border: 3px solid #ffffff;
   border-radius: 40px;
-
 }
