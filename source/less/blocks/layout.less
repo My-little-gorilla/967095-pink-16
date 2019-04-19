@@ -5,7 +5,15 @@ body{
 }
 
 .inner{
-  width: 100%;
+  // width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  @media (min-width: 960px) {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
 }
 
 .edges{
@@ -17,4 +25,9 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.distribution{
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,5 +1,5 @@
 .blog {
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     width: 300px;
     display: flex;
 
@@ -17,28 +17,22 @@
 
 .blog__inner {
   .inner();
-  @media (min-width: 960px) {
-    width: 940px;
-    margin: 0 auto;
-  }
 }
 
 .blog__ordinary {
   .edges();
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0;
   }
-  @media (min-width: 960px) {
-    width: 940px;
-    margin: 0 auto;
-  }
+
 }
 
 .blog__best-description {
   .edges();
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -52,17 +46,18 @@
   color: #ffffff;
   font-family: @font;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 768;
   line-height: 24px;
   text-transform: uppercase;
   background-color: #d22856;
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     top: 57px;
   }
 }
 
 .blog__img {
-  display: block;
+  // display: block;
+  display: none;
   width: 100%;
   height: auto;
   display: block;
@@ -74,7 +69,7 @@
   &--desk {
     display: none;
   }
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     &--tab {
       width: 100%;
       height: auto;
@@ -109,7 +104,7 @@
 .blog__string {
   display: flex;
   padding-top: 23px;
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     margin-top: 32px;
     padding-top: 0;
   }
@@ -140,13 +135,13 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     order: 3;
   }
 }
 
 .blog__counter {
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     order: 2;
     margin-left: auto;
     margin-top: 32px;

@@ -1,16 +1,13 @@
 .information__inner {
   .inner();
   .columns();
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     padding-right: 39px;
   }
   @media(min-width: 960px) {
-    display: flex;
+    .distribution();
     flex-direction: row;
-    justify-content: space-between;
     padding-right: 0;
-    width: 934px;
-    margin: 0 auto;
   }
 }
 
@@ -22,7 +19,7 @@
   font-family: @font;
   font-size: 24px;
   font-weight: 300;
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     width: 595px;
     margin-bottom: 0;
     font-size: 40px;
@@ -40,7 +37,7 @@
   padding-top: 30px;
   text-align: center;
   background-color: #f2f2f2;
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -48,18 +45,14 @@
 
 .information__features {
   margin-top: 40px;
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     text-align: left;
     margin-bottom: 0;
     margin-top: 0;
   }
   @media(min-width: 960px) {
-    position: relative;
-    top: -60px;
     width: 300px;
     text-align: center;
-    padding-left: 33px;
-    padding-right: 33px;
   }
 
   &--biggest {
@@ -90,13 +83,12 @@
       height: 300px;
     }
   }
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     &--tab {
       position: relative;
       width: 100%;
       height: auto;
       padding-right: 58px;
-      top: -128px;
       bottom: 0;
       display: block;
       margin-left: 20px;
@@ -123,7 +115,7 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
-    margin-top: 0;
+    margin: 0 auto;
     margin-bottom: 32px;
     width: 230px;
   }
@@ -136,7 +128,7 @@
   font-weight: 400;
   line-height: 24px;
   color: #283645;
-  @media(min-width: 700px) {
+  @media(min-width: 768px) {
     text-align: left;
     width: 100%;
     @media(min-width: 960px) {
@@ -144,6 +136,7 @@
       margin-top: 0;
       font-size: 18px;
       margin-right: 90px;
+      line-height: 30px;
     }
   }
 }
