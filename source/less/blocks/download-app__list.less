@@ -1,22 +1,17 @@
 .download-app__list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 207px;
-  margin-top: 32px;
+  margin-top: 40px;
   padding: 0;
   list-style: none;
-  @media(min-width: 960px) {
-    margin-top: 67px;
-    margin-bottom: 64px;
-  }
 }
 
 .download-app__link {
   display: block;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 
   &--apple {
     background-image: url("../img/logo-apple.svg");
@@ -34,5 +29,11 @@
     background-image: url("../img/logo-microsoft.svg");
     width: 44px;
     height: 41px;
+  }
+}
+@media(min-width: 960px) {
+  .download-app__list {
+    margin-top: 67px;
+    margin-bottom: 36px;
   }
 }

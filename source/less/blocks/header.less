@@ -1,17 +1,27 @@
 .header {
   width: 100%;
   padding: 23px 0 0;
-  background-color: #283645;
-  @media (min-width: 960px) {
-    display: flex;
-    align-items: baseline;
-    padding: 0; // opacity: 0.3;
+
+  &--open {
+    background-color: #283645;
+  }
+
+  &--closed {
+    background-color: rgba(#283645, 0.80);
   }
 }
 
 .header__inner {
   .inner();
-  @media (min-width: 960px) {
-    padding-left: 130px;
+}
+@media (min-width: 960px) {
+  .header {
+    display: flex;
+    align-items: baseline;
+    padding: 6px 0 0;
+  }
+
+  .header__inner {
+    padding-left: 113px;
   }
 }
