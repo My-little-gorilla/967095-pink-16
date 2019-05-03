@@ -1,47 +1,19 @@
 .blog {
-  @media(min-width: 700px) {
-    width: 300px;
-    display: flex;
-
-    &--best {
-      display: block;
-      position: relative;
-      margin: 0;
-      width: 100%;
-    }
-  }
-  @media (min-width: 960px) {
-    margin-bottom: 50px;
+  &--best {
+    position: relative;
   }
 }
 
 .blog__inner {
   .inner();
-  @media (min-width: 960px) {
-    width: 940px;
-    margin: 0 auto;
-  }
 }
 
 .blog__ordinary {
   .edges();
-  @media(min-width: 700px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  @media (min-width: 960px) {
-    width: 940px;
-    margin: 0 auto;
-  }
 }
 
 .blog__best-description {
   .edges();
-  @media(min-width: 700px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .blog__marker {
@@ -56,44 +28,6 @@
   line-height: 24px;
   text-transform: uppercase;
   background-color: #d22856;
-  @media(min-width: 700px) {
-    top: 57px;
-  }
-}
-
-.blog__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  display: block;
-
-  &--tab {
-    display: none;
-  }
-
-  &--desk {
-    display: none;
-  }
-  @media(min-width: 700px) {
-    &--tab {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    &--mob {
-      display: none;
-    }
-  }
-  @media (min-width: 960px) {
-    &--tab {
-      display: none;
-    }
-
-    &--desk {
-      display: block;
-    }
-  }
 }
 
 .blog-wrapper {
@@ -101,23 +35,17 @@
   padding-bottom: 28px;
   padding-top: 0;
   background-color: #f2f2f2;
-  @media(min-width: 960px) {
-    margin-bottom: 0;
-  }
 }
 
 .blog__string {
   display: flex;
   padding-top: 23px;
-  @media(min-width: 700px) {
-    margin-top: 32px;
-    padding-top: 0;
-  }
 }
 
 .blog__title {
   padding: 0;
   margin: 0;
+  margin-right: 4px;
   font-family: @font;
   font-size: 14px;
   font-weight: 700;
@@ -140,22 +68,28 @@
   font-size: 14px;
   line-height: 24px;
   color: #283645;
-  @media(min-width: 700px) {
-    order: 3;
-  }
 }
 
 .blog__counter {
-  @media(min-width: 700px) {
-    order: 2;
-    margin-left: auto;
-    margin-top: 32px;
+  &--best {
+    display: flex;
+    // flex-direction: row-reverse;
   }
 }
 
 .blog__like-btn {
   width: 13px;
   height: 12px;
+  border: none;
+  background-color: transparent;
+  margin-right: 18px;
+
+  &--best {
+  }
+}
+
+.blog__like-btn svg {
+  fill: #da5b7d;
 }
 
 .blog__like-link {
@@ -165,4 +99,125 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #d22856;
+  text-decoration: none;
+}
+@media (min-width: 660px) {
+  .blog {
+    display: flex;
+    width: 300px;
+
+    &--best {
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .blog__ordinary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .blog__best-description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .blog__marker {
+    top: 57px;
+  }
+
+  .blog__string {
+    margin-top: 32px;
+    padding-top: 0;
+  }
+
+  .blog__text {
+    min-height: 60px;
+    order: 3;
+    margin-top: 0px;
+  }
+
+  .blog__counter {
+    order: 2;
+    margin-left: auto;
+    margin-top: 32px;
+  }
+  .blog-wrapper{
+    &--best{
+    padding-bottom: 4px;
+    margin-bottom: 52px;
+  }}
+}
+@media (min-width: 960px) {
+  .blog {
+    margin-bottom: 50px;
+  }
+
+  .blog__inner {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .blog__ordinary {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .blog__marker {
+    right: 130px;
+  }
+
+  .blog-wrapper {
+    margin-bottom: 0;
+  }
+
+  .blog__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 46px;
+  }
+
+  .blog__counter {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.blog__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  display: block;
+
+  &--tab {
+    display: none;
+  }
+
+  &--desk {
+    display: none;
+  }
+  @media(min-width: 660px) {
+    &--tab {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &--mob {
+      display: none;
+    }
+  }
+  @media (min-width: 960px) {
+    &--tab {
+      display: none;
+    }
+
+    &--desk {
+      display: block;
+    }
+  }
 }
