@@ -18,8 +18,5 @@ navToggle.addEventListener('click', function() {
     header.classList.add('header--close');
     navButton.classList.remove('header-navigation__trigger-pic--close');
     navButton.classList.add('header-navigation__trigger-pic--open');
-
-
-
   }
 });
