@@ -3,6 +3,8 @@ body {
   font-weight: 700;
   background: #ffffff;
 }
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
 
 .pink {
   &:focus,
@@ -48,6 +50,10 @@ body {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    // background-size: 1338px auto;
+  }
 }
 
 .triangle{
