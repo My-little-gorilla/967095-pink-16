@@ -10,13 +10,13 @@ navToggle.addEventListener('click', function() {
     header.classList.add('header--open');
 
     navButton.classList.remove('header-navigation__trigger-pic--open');
-    navButton.classList.add('header-navigation__trigger-pic--close');
+    navButton.classList.add('header-navigation__trigger-pic--closed');
   } else {
     menu.classList.add('navigation-list--closed');
     menu.classList.remove('navigation-list--active');
     header.classList.remove('header--open');
     header.classList.add('header--close');
-    navButton.classList.remove('header-navigation__trigger-pic--close');
+    navButton.classList.remove('header-navigation__trigger-pic--closed');
     navButton.classList.add('header-navigation__trigger-pic--open');
   }
 });
