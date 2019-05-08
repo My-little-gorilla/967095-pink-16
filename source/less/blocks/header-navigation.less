@@ -9,6 +9,10 @@
   justify-content: center;
   margin-bottom: 27px;
   align-items: center;
+
+  &:hover .logo-path {
+    fill: #d22856;
+  }
 }
 
 .header-navigation__trigger {
@@ -20,11 +24,30 @@
 }
 
 .header-navigation__trigger-pic {
-  &--close {
-    display: none;
+  &:hover{
+    .btn-path{
+      fill: #d22856;
+    }
   }
-  &--active{
-    display: flex;
+  &--open  {
+    svg{
+      &:first-child{
+        display: none;
+      }
+      &:last-child{
+        display: inline-block;
+      }
+    }
+  }
+  &--closed{
+    svg{
+      &:first-child{
+        display: inline-block;
+      }
+      &:last-child{
+        display: none;
+      }
+    }
   }
 }
 @media(min-width: 660px) {
