@@ -66,12 +66,85 @@
   <main class="form-main main-content">
     <section class="intro intro__form">
         <h1 class="intro__title intro__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+    </section>
+  </div>
+
+    <section class="form">
+      <div class="form__inner"></div>
+  <form class="form__box" action="https://echo.htmlacademy.ru" method="get">
+    <fieldset class="form__area form__area--identity">
+      <ul class="form__list form__area-wrapper form__area-wrapper--column">
+        <li class="form__item">
+      <label class="form__label form__label--identity form__label--field" for="first-name">Фамилия:</label>
+      <input class="form__input form__input--identity" id="first-name" type="text" name="user-first-name"  placeholder="Укажите фамилию *" required>
+      </li>
+      <li class="form__item">
+      <label class="form__label form__label--identity form__label--field" for="name">Имя:</label>
+      <input class="form__input form__input--identity" id="name" type="text" name="user-name"  placeholder="Введите ваше имя *" required>
+      </li>
+      <li class="form__item">
+      <label class="form__label form__label--identity form__label--field" for="middle-name">Отчество:</label>
+      <input class="form__input form__input--identity" id="middle-name" type="text" name="middle-name"  placeholder="Ну и отчество тоже">
+      </li>
+    </ul>
+    </fieldset>
+    <div class="form__area-wrapper form__area-wrapper--grey form__area-wrapper--check">
+<fieldset  class="form__area form__area--check">
+  <legend class="form__title">Ваши безбашенные
+достижения в путешествии</legend>
+<input  class="visually-hidden form__indicator" type="checkbox" name="choice" value="check1" id="choice1" checked>
+<label  class="form__label form__label--name" for="choice1" >Сделал селфи с акулой</label>
+<input  class="visually-hidden form__indicator" type="checkbox" name="choice" value="check2" id="choice2">
+<label  class="form__label form__label--name"  for="choice2">Обгорел на пляже</label>
+<input  class="visually-hidden form__indicator" type="checkbox" name="choice" value="check3" id="choice3">
+<label  class="form__label form__label--name"  for="choice3">Видел Чака Норриса</label>
+<input  class="visually-hidden form__indicator" type="checkbox" name="choice" value="check4" id="choice4">
+<label  class="form__label form__label--name"  for="choice4">Накупил сувениров</label>
+<input  class="visually-hidden form__indicator" type="checkbox" name="choice" value="check5" id="choice5">
+<label  class="form__label form__label--name"  for="choice5">Удержал башню</label>
+<input  class="visually-hidden form__indicator" type="checkbox" name="choice" value="check6" id="choice6">
+<label class="form__label form__label--name"  for="choice6">Разгромил отель</label>
+</fieldset>
+</div>
+<fieldset class="form__area form__area--contacts">
+  <legend class="form__title form__title--colorless">Контактная информация</legend>
+  <label class="form__label form__label--tel form__label--field" for="tel">Номер телефона</label>
+  <div class="form__input-wrap form__input-wrap--tel">
+  <input class="form__input form__input--tel" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+  </div>
+  <label class="form__label form__label--email form__label--field" for="email">адрес почты</label>
+    <div class="form__input-wrap form__input-wrap--email">
+  <input class="form__input form__input--email" id="email" type="email" name="email" placeholder="Введите почту *" required>
+</div>
+</fieldset>
+<div class="form__area-wrapper form__area-wrapper--grey form__area-wrapper--dev">
+<fieldset class="form__area form__area--software">
+  <legend class="form__title">С каким приложением
+путешествовали?</legend>
+<input class="visually-hidden form__indicator-radio" id="ios" type="radio" name="device" value="ios">
+<label  class="form__label form__label--name form__label--device" for="ios">Pink для iOS</label>
+<input class="visually-hidden form__indicator-radio" id="android" type="radio" name="device" value="android">
+<label  class="form__label form__label--name form__label--device" for="android">Pink на Android</label>
+<input class="visually-hidden form__indicator-radio" id="windows" type="radio" name="windowsphone" value="window">
+<label  class="form__label form__label--name form__label--device" for="windows">Windows Phone</label>
+</fieldset>
+</div>
+<fieldset class="form__area form__area--comment">
+  <label class="form__label form__label--comment" for="comment-area">Опишите свои эмоции</label>
+  <textarea class="form__input form__input--comment" id="comment-area" name="comment-text" rows="8" cols="80"></textarea>
+
+</fieldset>
+<div class="form__butn-wrap">
+<button class="form__btn" type="submit" name="button">Отправить форму</button>
+<p class="form__note"><span>*</span> — обязательные поля</p>
+</div>
+  </form>
     </section>
   </main>
-</div>
 
   <!-- footer -->
-  <footer class="form-footer footer">
+  <footer class="footer footer--form">
     <div class="footer__inner">
       <a class="logo--footer" href="index.html">
         <span class="visually-hidden">Pink</span>
