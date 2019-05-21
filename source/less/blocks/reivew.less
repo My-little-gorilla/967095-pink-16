@@ -1,30 +1,119 @@
-.review__slaider-toggle{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.review{
+  padding-top: 46px;
 }
-.review__slaider-list{
-  width: 280px;
-  margin: 0;
+.review__slider{
+  padding-top: 44px;
+}
+.review__slider-toggle {
+  display: flex;
+  justify-content: space-between;
+  width: 61px;
   margin: 0 auto;
-  text-align: center;
-  padding-left: 25px;
   padding: 0;
   list-style: none;
-}
-.review__slaider-name{
-width: 165px;
-margin: 0 auto;
-color: #000000;
-font-size: 18px;
-font-weight: 700;
-line-height: 30px;
 }
 
-.review__slaider-text{
-width: 276px;
-color: #283645;
-font-size: 14px;
-font-weight: 400;
-line-height: 30px;
+.review__slider-list {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+
+.review__slider-name {
+  width: 165px;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.review__slider-text {
+  width: 276px;
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.reivew__slide {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #283645;
+    opacity: 0.3;
+    border-radius: 50%;
+    bottom: -264px;
+  }
+}
+
+.reivew__slide-active:checked > .review__slide{
+  &::before{
+    background-color: red;
+  }
+}
+.review__slider-info{
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .review__slider-list{
+    width: 100%;
+  }
+  .review__slider-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .review__slider-name{
+    width: auto;
+    order: 2;
+    color: #283645;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .review__slider-info{
+    display: block;
+    color: #283645;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .review__slider-text{
+    width: auto;
+    margin-top: 24px;
+    margin-bottom: 35px;
+    color: #283645;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+@media (min-width: 960px) {
+.review__slider{
+  padding-top: 179px;
+}
+
+.reivew__slide{
+  &::before{
+    display: none;
+  }
+}
+  .review__slider-text{
+    position: relative;
+    width: 688px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+  .review__slider-name {
+    font-size: 24px;
+  }
+  .review__slider-info {
+    font-size: 18px;
+  }
 }

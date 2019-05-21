@@ -10,6 +10,10 @@
   &--closed{
     display: none;
   }
+  &--nojs{
+    display: block;
+    background-color: #283645;
+  }
 }
 
 
@@ -46,7 +50,9 @@
     display: flex;
     flex-wrap: wrap;
     min-width: 626px;
-    margin-right: 100px;
+    &--nojs{
+      background-color:  rgba(40, 54, 69, 0);
+    }
 }
     .navigation-list__item {
       border: none;

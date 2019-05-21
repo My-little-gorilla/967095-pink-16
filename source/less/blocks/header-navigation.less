@@ -1,3 +1,6 @@
+.header-navigation{
+  display: block;
+}
 .header-navigation__wrapper {
   display: flex;
   justify-content: space-between;
@@ -50,13 +53,27 @@
     }
   }
 }
+
+@media (min-width: 660px) {
+  .header-navigation__wrapper{
+  width: 620px;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+}
 @media(min-width: 660px) {
   .header-navigation__trigger {
     padding-top: 17px;
   }
 }
+
 @media (min-width: 960px) {
   .header-navigation__trigger {
     display: none;
+  }
+  .header-navigation{
+    display: flex;
+    justify-content: space-between;
   }
 }
