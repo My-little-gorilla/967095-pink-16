@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="css\normalize.css">
+  <link rel="stylesheet" href="css\style.min.css">
 
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -345,12 +346,16 @@
     <section class="edit">
       <div class="edit__inner">
         <picture>
-          <img class="edit__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" alt="пример результатов настройки">
-          <source>
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x" alt="user-photo" width="700" height="509">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x" alt="user-photo" width="300" height="300">
+            <img class="edit__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" alt="пример результатов настройки">
+
 
         </picture>
       </div>
-      <div class="edit__list"></div>
+      <div class="edit__list-wrap">
+        <ul class="edit__list"></ul>
+      </div>
     </section>
   </main>
   <!-- footer -->
