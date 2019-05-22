@@ -2,6 +2,8 @@ var menu = document.querySelector('.navigation-list');
 var navToggle = document.querySelector('.header-navigation__trigger');
 var navButton = document.querySelector('.header-navigation__trigger-pic');
 var header = document.querySelector('.header');
+header.classList.remove('header--nojs');
+menu.classList.remove('navigation-list--nojs');
 navToggle.addEventListener('click', function() {
   if (menu.classList.contains('navigation-list--closed')) {
     menu.classList.remove('navigation-list--closed');

@@ -12,7 +12,13 @@
 }
 
 .header__inner {
-  .inner();
+  // padding-right: 19px;
+}
+
+@media (min-width: 660px){
+  // header__inner{
+  //   padding-right: 40px;
+  // }
 }
 @media (min-width: 960px) {
   .header {
@@ -21,7 +27,16 @@
     padding: 6px 0 0;
   }
 
-  .header__inner {
-    padding-left: 113px;
+  .header__inner{
+    width: 947px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+@media (max-width:959px) {
+  .header{
+    &--nojs{
+      background-color: #283645;
+    }
   }
 }
