@@ -36,15 +36,18 @@
   display: block;}
 
 .blog-wrapper {
-  margin-bottom: 20px;
-  padding-bottom: 28px;
+  margin-bottom: 21px;
+  padding-bottom: 20px;
   padding-top: 0;
   background-color: #f2f2f2;
+  &--best{
+    padding-bottom: 17px;
+  }
 }
 
 .blog__string {
   display: flex;
-  padding-top: 23px;
+  padding-top: 20px;
 }
 
 .blog__title {
@@ -68,6 +71,7 @@
 }
 
 .blog__text {
+  margin-top: 2px;
   font-family: @font;
   font-weight: 300;
   font-size: 14px;
@@ -119,10 +123,16 @@
     }
   }
 
+  .blog__like-btn{
+    &--best{
+      order: 2;
+    }
+  }
+
 .blog__img{
   height: 300px;
   &--first{
-    height: auto;
+    height: 510px;
   }
 }
   .blog__ordinary {
@@ -143,18 +153,27 @@
   .blog__string {
     margin-top: 32px;
     padding-top: 0;
+    &--best{
+      margin-top: 26px;
+    }
   }
 
   .blog__text {
     min-height: 60px;
     order: 3;
     margin-top: 0px;
+    &--best{
+      padding-right: 9px;
+    }
   }
 
   .blog__counter {
     order: 2;
     margin-left: auto;
     margin-top: 32px;
+    &--best{
+      margin-top: 23px;
+    }
   }
   .blog-wrapper{
     &--best{
