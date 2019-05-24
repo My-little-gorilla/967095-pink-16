@@ -29,18 +29,21 @@
   text-transform: uppercase;
   background-color: #d22856;
 }
+
 .blog__img {
   display: block;
   width: 100%;
   height: auto;
-  display: block;}
+  display: block;
+}
 
 .blog-wrapper {
   margin-bottom: 21px;
   padding-bottom: 20px;
   padding-top: 0;
   background-color: #f2f2f2;
-  &--best{
+
+  &--best {
     padding-bottom: 17px;
   }
 }
@@ -52,8 +55,7 @@
 
 .blog__title {
   padding: 0;
-  margin: 0;
-  margin-right: 4px;
+  margin: 0 4px 0 0;
   font-family: @font;
   font-size: 14px;
   font-weight: 700;
@@ -93,8 +95,7 @@
   background-color: transparent;
   margin-right: 18px;
 
-  &--best {
-  }
+  &--best {}
 }
 
 .blog__like-btn svg {
@@ -124,19 +125,22 @@
     }
   }
 
-  .blog__like-btn{
+  .blog__like-btn {
     order: 1;
-    &--best{
+
+    &--best {
       order: 2;
     }
   }
 
-.blog__img{
-  height: 300px;
-  &--first{
-    height: 510px;
+  .blog__img {
+    height: 300px;
+
+    &--first {
+      height: 510px;
+    }
   }
-}
+
   .blog__ordinary {
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +159,8 @@
   .blog__string {
     margin-top: 29px;
     padding-top: 0;
-    &--best{
+
+    &--best {
       margin-top: 26px;
     }
   }
@@ -163,9 +168,10 @@
   .blog__text {
     min-height: 60px;
     order: 3;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 0;
-    &--best{
+
+    &--best {
       padding-right: 9px;
     }
   }
@@ -176,23 +182,28 @@
     order: 2;
     margin-left: auto;
     margin-top: 5px;
-    &--best{
+
+    &--best {
       margin-top: 23px;
     }
   }
-  .blog-wrapper{
+
+  .blog-wrapper {
     margin-bottom: 0;
-    &--best{
-    padding-bottom: 12px;
-    margin-bottom: 52px;
-  }}
+
+    &--best {
+      padding-bottom: 12px;
+      margin-bottom: 52px;
+    }
+  }
 }
 @media (min-width: 960px) {
   .blog {
     margin-top: 54px;
     margin-bottom: 0;
-    &--best{
-      margin-bottom: 0px;
+
+    &--best {
+      margin-bottom: 0;
       margin-top: 0;
     }
   }
@@ -213,7 +224,8 @@
 
   .blog-wrapper {
     margin-bottom: 0;
-    &--best{
+
+    &--best {
       padding-bottom: 0;
     }
   }
@@ -229,18 +241,17 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 19px;
-    &--best{
+
+    &--best {
       flex-direction: row;
     }
   }
-  .blog__img{
+
+  .blog__img {
     height: 402px;
-    &--first{
+
+    &--first {
       height: 511px;
     }
-
-
-
   }
-
 }
