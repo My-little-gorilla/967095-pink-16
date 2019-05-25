@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 31px;
+  padding-left: 17px;
   text-align: center;
   font-family: @font;
   font-size: 14px;
@@ -20,20 +21,33 @@
   text-decoration: none;
   color: #283645;
 }
-.footer-developed svg{
-   fill: #d22856;
+
+.footer-developed svg {
+  fill: #d22856;
 }
+
 .footer-developed:hover svg {
-    fill: #283645;
+  fill: #283645;
 }
+
 .footer-developed:active svg {
   opacity: 0.3;
 }
+
 @media(min-width: 660px) {
+  .footer{
+    &--form{
+      padding-top: 88px;
+    }
+  }
   .footer__inner {
+    width: 648px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 60px 0 20px;
+    padding: 0;
+    padding-left: 11px;
+    box-sizing: border-box;
   }
 
   .footer-developed {

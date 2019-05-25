@@ -29,18 +29,21 @@
   text-transform: uppercase;
   background-color: #d22856;
 }
+
 .blog__img {
   display: block;
   width: 100%;
   height: auto;
-  display: block;}
+  display: block;
+}
 
 .blog-wrapper {
   margin-bottom: 21px;
   padding-bottom: 20px;
   padding-top: 0;
   background-color: #f2f2f2;
-  &--best{
+
+  &--best {
     padding-bottom: 17px;
   }
 }
@@ -52,8 +55,7 @@
 
 .blog__title {
   padding: 0;
-  margin: 0;
-  margin-right: 4px;
+  margin: 0 4px 0 0;
   font-family: @font;
   font-size: 14px;
   font-weight: 700;
@@ -93,8 +95,7 @@
   background-color: transparent;
   margin-right: 18px;
 
-  &--best {
-  }
+  &--best {}
 }
 
 .blog__like-btn svg {
@@ -114,6 +115,7 @@
   .blog {
     display: flex;
     width: 300px;
+    margin-bottom: 20px;
 
     &--best {
       position: relative;
@@ -123,18 +125,22 @@
     }
   }
 
-  .blog__like-btn{
-    &--best{
+  .blog__like-btn {
+    order: 1;
+
+    &--best {
       order: 2;
     }
   }
 
-.blog__img{
-  height: 300px;
-  &--first{
-    height: 510px;
+  .blog__img {
+    height: 300px;
+
+    &--first {
+      height: 510px;
+    }
   }
-}
+
   .blog__ordinary {
     display: flex;
     flex-wrap: wrap;
@@ -151,9 +157,10 @@
   }
 
   .blog__string {
-    margin-top: 32px;
+    margin-top: 29px;
     padding-top: 0;
-    &--best{
+
+    &--best {
       margin-top: 26px;
     }
   }
@@ -161,29 +168,44 @@
   .blog__text {
     min-height: 60px;
     order: 3;
-    margin-top: 0px;
-    &--best{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &--best {
       padding-right: 9px;
     }
   }
 
   .blog__counter {
+    display: flex;
+    justify-content: space-between;
     order: 2;
     margin-left: auto;
-    margin-top: 32px;
-    &--best{
+    margin-top: 5px;
+
+    &--best {
       margin-top: 23px;
     }
   }
-  .blog-wrapper{
-    &--best{
-    padding-bottom: 4px;
-    margin-bottom: 52px;
-  }}
+
+  .blog-wrapper {
+    margin-bottom: 0;
+
+    &--best {
+      padding-bottom: 12px;
+      margin-bottom: 52px;
+    }
+  }
 }
 @media (min-width: 960px) {
   .blog {
-    margin-bottom: 50px;
+    margin-top: 54px;
+    margin-bottom: 0;
+
+    &--best {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
   }
 
   .blog__inner {
@@ -197,11 +219,15 @@
   }
 
   .blog__marker {
-    right: 130px;
+    right: 11px;
   }
 
   .blog-wrapper {
     margin-bottom: 0;
+
+    &--best {
+      padding-bottom: 0;
+    }
   }
 
   .blog__text {
@@ -212,7 +238,20 @@
 
   .blog__counter {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
+    margin-top: 19px;
+
+    &--best {
+      flex-direction: row;
+    }
+  }
+
+  .blog__img {
+    height: 402px;
+
+    &--first {
+      height: 511px;
+    }
   }
 }
