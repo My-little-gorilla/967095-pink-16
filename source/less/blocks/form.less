@@ -16,7 +16,9 @@
     text-align: center;
   }
 }
-
+.form__icon-yes{
+fill: #d22856;
+}
 .form__input {
   width: 276px;
   margin: 10px auto 28px;
@@ -42,7 +44,7 @@
     padding: 14px 8px 15px 18px;
   }
   &--comment{
-    margin-bottom: 34px;
+    margin-bottom: 4px;
   }
 }
 .form__fieldset-inner{
@@ -70,7 +72,10 @@
   }
   &--check{
     padding-bottom: 0;
-
+.form__title{
+  position: relative;
+  top: -42px;
+}
   }
   &--software{
     padding-top: 41px;
@@ -78,6 +83,7 @@
   }
   &--comment{
     padding-top: 30px;
+    padding-bottom: 36px;
   }
 }
 
@@ -497,18 +503,28 @@ display: none;
 
     &--comment {
       flex-basis: 100%;
+      padding-bottom: 42px;
     }
 
-    &--check {
+    &--check{
+    position: relative;
       display: flex;
+      justify-content: space-between;
       flex-basis: 100%;
       flex-direction: row;
       flex-wrap: wrap;
       padding-right: 0;
       padding-left: 60px;
+      padding-top: 53px;
+      padding-bottom: 4px;
+      .form__title{
+        position: absolute;
+        top: -12px;
+        left: 258px;
+        background-color: #ffffff;
+      }
     }
     &--software{
-      // padding-right: 123px;
       width: 437px;
       padding-left: 23px;
       padding-right: 23px;
@@ -518,9 +534,6 @@ display: none;
       }
     }
   }
-.form__check-item{
-  border: 1px solid black;
-}
   .form__area-wrapper {
     height: 334px;
     justify-content: space-between;
@@ -529,7 +542,7 @@ display: none;
       height: auto;
 
       flex-basis: 100%;
-      margin-top: 31px;
+      margin-top: 57px;
 
     }
     &--dev{
@@ -567,6 +580,9 @@ display: none;
     &--contacts{
       padding-bottom: 16px;
     }
+    &--check{
+      width: 200px;
+    }
     &--1{
       order: 1;
     }
@@ -584,6 +600,11 @@ display: none;
   }
   &--6{
     order: 6;
+  }
+  &--comment{
+    left: 287px;
+    margin-left: 0;
+    padding-left: 30px;
   }
 }
   .form__input-wrap {
@@ -608,6 +629,9 @@ display: none;
 
   .form__input {
     margin: 0;
+    &--comment{
+      height: 130px;
+    }
   }
   .form__butn-wrap{
     width: 940px;
