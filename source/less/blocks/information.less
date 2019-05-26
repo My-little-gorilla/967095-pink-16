@@ -74,8 +74,8 @@
   margin: 0 auto;
   background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
   background-repeat: no-repeat;
-  background-size: 253px 253px,298px 345px;
-  background-position: 64px 75px,40px 10px;
+  background-size: 253px 253px, 298px 345px;
+  background-position: 64px 75px, 40px 10px;
   padding-bottom: 60px;
 
   &::before {
@@ -137,7 +137,8 @@
   font-size: 18px;
   font-weight: 400;
 }
-@media(min-width: 660px) {
+
+@media (min-width: 660px) {
   .information {
     margin-top: 50px;
   }
@@ -180,6 +181,7 @@
     display: block;
   }
 }
+
 @media (max-width: 959px) {
   .information__diagram {
     background-color: #ffffff;
@@ -188,8 +190,8 @@
   .information__diagram-wrap {
     justify-content: center;
     padding-left: 120px;
-    background-size: 198px 200px,238px 274px;
-    background-position: 43px 114px,22px 59px;
+    background-size: 198px 200px, 238px 274px;
+    background-position: 43px 114px, 22px 59px;
 
     &::before {
       width: 166px;
@@ -221,7 +223,8 @@
     font-size: 14px;
   }
 }
-@media(min-width: 960px) {
+
+@media (min-width: 960px) {
   .information {
     padding-top: 70px;
     margin-top: 0;
@@ -229,7 +232,6 @@
 
   .information__inner {
     padding-top: 0;
-    margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -254,7 +256,7 @@
   }
 
   .information__diagram-wrap {
-    background-position: 53px 75px,30px 4px;
+    background-position: 53px 75px, 30px 4px;
     width: 1000px;
 
     &::before {
@@ -324,14 +326,16 @@
 
   &--desk {
     display: none;
-    @media(min-width: 960px) {
+
+    @media (min-width: 960px) {
       display: block;
       margin-bottom: 56px;
       height: 300px;
       margin-top: 13px;
     }
   }
-  @media(min-width: 660px) {
+
+  @media (min-width: 660px) {
     &--tab {
       position: relative;
       margin-top: 0;
@@ -340,7 +344,8 @@
       padding-right: 40px;
       display: block;
       margin-left: 20px;
-      @media(min-width: 960px) {
+
+      @media (min-width: 960px) {
         display: none;
       }
     }
@@ -351,8 +356,9 @@
     width: 268px;
   }
 }
+
 @media (min-width: 960px) {
-  .information__pic{
+  .information__pic {
     width: 300px;
   }
 }
