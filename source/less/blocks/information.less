@@ -31,6 +31,7 @@
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 101% auto;
+  overflow: hidden;
 }
 
 .information__features {
@@ -73,8 +74,8 @@
   margin: 0 auto;
   background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
   background-repeat: no-repeat;
-  background-size: 253px 253px,298px 345px;
-  background-position: 64px 75px,40px 10px;
+  background-size: 253px 253px, 298px 345px;
+  background-position: 64px 75px, 40px 10px;
   padding-bottom: 60px;
 
   &::before {
@@ -114,7 +115,8 @@
 
 .information__diagram-text {
   width: 525px;
-  padding-top: 100px;
+  padding-top: 96px;
+  padding-left: 10px;
   margin-right: 66px;
 }
 
@@ -135,13 +137,14 @@
   font-size: 18px;
   font-weight: 400;
 }
-@media(min-width: 660px) {
+
+@media (min-width: 660px) {
   .information {
     margin-top: 50px;
   }
 
   .information__inner {
-    padding-right: 39px;
+    padding-right: 12px;
     padding-top: 60px;
   }
 
@@ -153,13 +156,14 @@
 
     &--short {
       width: 345px;
+      margin-bottom: 50px;
     }
   }
 
   .information__wrapper {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 0;
+    padding-top: 1px;
   }
 
   .information__features {
@@ -177,6 +181,7 @@
     display: block;
   }
 }
+
 @media (max-width: 959px) {
   .information__diagram {
     background-color: #ffffff;
@@ -185,15 +190,15 @@
   .information__diagram-wrap {
     justify-content: center;
     padding-left: 120px;
-    background-size: 193px 193px, 238px 275px;
-    background-position: 43px 125px, 20px 65px;
+    background-size: 198px 200px, 238px 274px;
+    background-position: 43px 114px, 22px 59px;
 
     &::before {
       width: 166px;
       height: 166px;
-      padding-top: 26px;
-      left: 55px;
-      top: 137px;
+      padding-top: 33px;
+      left: 59px;
+      top: 126px;
       font-size: 90px;
     }
   }
@@ -218,7 +223,8 @@
     font-size: 14px;
   }
 }
-@media(min-width: 960px) {
+
+@media (min-width: 960px) {
   .information {
     padding-top: 70px;
     margin-top: 0;
@@ -226,7 +232,6 @@
 
   .information__inner {
     padding-top: 0;
-    margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -247,24 +252,29 @@
 
   .information__wrapper {
     margin-top: 84px;
+    overflow: visible;
   }
-.information__diagram-wrap{
-  background-position: 53px 75px,30px 4px;
-  width: 1000px;
-  &::before{
-    left: 68px;
+
+  .information__diagram-wrap {
+    background-position: 53px 75px, 30px 4px;
+    width: 1000px;
+
+    &::before {
+      left: 68px;
+    }
   }
-}
-.information__diagram-text{
-  width: 525px;
-  margin-right: 80px;
-}
+
+  .information__diagram-text {
+    width: 525px;
+    margin-right: 80px;
+  }
+
   .information__features {
     position: relative;
-    top: -60px;
+    top: -12px;
     width: 300px;
     text-align: center;
-    padding-left: 33px;
+    // padding-left: 33px;
     padding-right: 33px;
     box-sizing: border-box;
     margin-bottom: 0;
@@ -275,6 +285,7 @@
   }
 
   .information__features-name {
+    margin-left: 35px;
     color: #000000;
     font-size: 30px;
     font-weight: 700;
@@ -286,14 +297,15 @@
 
   .information__features-description {
     width: 239px;
+    margin-left: 31px;
     line-height: 30px;
     text-align: center;
     margin-top: 0;
     font-size: 18px;
-    margin-right: 90px;
   }
 
   .information__diagram {
+    padding-top: 51px;
     padding-bottom: 58px;
   }
 }
@@ -303,8 +315,9 @@
   margin: 37px auto 0;
 
   &--mob {
-    width: 240px;
-    height: 277px;
+    width: 155px;
+    height: 328px;
+    margin-bottom: -50px;
   }
 
   &--tab {
@@ -313,23 +326,26 @@
 
   &--desk {
     display: none;
-    @media(min-width: 960px) {
+
+    @media (min-width: 960px) {
       display: block;
-      margin-bottom: 60px;
+      margin-bottom: 56px;
       height: 300px;
       margin-top: 13px;
     }
   }
-  @media(min-width: 660px) {
+
+  @media (min-width: 660px) {
     &--tab {
       position: relative;
       margin-top: 0;
       width: 280px;
-      height: auto;
+      height: 488px;
       padding-right: 40px;
       display: block;
       margin-left: 20px;
-      @media(min-width: 960px) {
+
+      @media (min-width: 960px) {
         display: none;
       }
     }
@@ -338,5 +354,11 @@
       display: none;
     }
     width: 268px;
+  }
+}
+
+@media (min-width: 960px) {
+  .information__pic {
+    width: 300px;
   }
 }

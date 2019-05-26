@@ -34,7 +34,6 @@
   display: block;
   width: 100%;
   height: auto;
-  display: block;
 }
 
 .blog-wrapper {
@@ -94,8 +93,6 @@
   border: none;
   background-color: transparent;
   margin-right: 18px;
-
-  &--best {}
 }
 
 .blog__like-btn svg {
@@ -111,6 +108,7 @@
   color: #d22856;
   text-decoration: none;
 }
+
 @media (min-width: 660px) {
   .blog {
     display: flex;
@@ -142,6 +140,8 @@
   }
 
   .blog__ordinary {
+    width: 617px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -197,6 +197,7 @@
     }
   }
 }
+
 @media (min-width: 960px) {
   .blog {
     margin-top: 54px;
@@ -216,6 +217,8 @@
   .blog__ordinary {
     width: 940px;
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .blog__marker {

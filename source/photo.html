@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css\normalize.css">
-  <link rel="stylesheet" href="css\style.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,7 +15,7 @@
   <!-- header__start -->
   <!-- header__mobile -->
 
-<include src="build/img/sprite.svg"></include>
+  <include src="build/img/sprite.svg"></include>
 
   <div class="background background--photo">
     <header class="header header--closed header--open">
@@ -23,32 +23,22 @@
         <nav class="header-navigation">
           <div class="header-navigation__wrapper">
             <a class="header-navigation__logo" href="index.html">
-
               <svg class="logo logo--mob">
-                <use xlink:href="#logo"></use>
+                <use xlink:href="#logo-pink-white-mobile"></use>
               </svg>
-
               <svg class="logo logo--tab">
-                <use xlink:href="#logo-tab">
-
+                <use xlink:href="#logo-pink-white-tablet">
                 </use>
               </svg>
               <svg class="logo logo--desk">
-                <use xlink:href="#logo-desk"></use>
+                <use xlink:href="#logo-pink-white-desktop"></use>
               </svg>
-
-
               <span class="visually-hidden">Pink</span>
             </a>
             <button class="header-navigation__trigger" type="button" name="button">
               <span class="visually-hidden">Меню</span>
-              <span class="header-navigation__trigger-pic header-navigation__trigger-pic--open header-navigation__trigger-pic--closed">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867"
-                  xml:space="preserve">
-                  <path class="btn-path" fill="#FFFFFF"
-                    d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
-                </svg>
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007"
+              <span class="header-navigation__trigger-pic  header-navigation__trigger-pic--closed">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007"
                   xml:space="preserve">
                   <g id="miu">
                     <g id="editor_list_view_hambuger_menu_glyph">
@@ -63,6 +53,11 @@
                     </g>
                   </g>
                 </svg>
+                <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867"
+                  xml:space="preserve">
+                  <path class="btn-path" fill="#FFFFFF"
+                    d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
+                </svg>
 
               </span>
 
@@ -72,10 +67,10 @@
           </div>
 
           <ul class="navigation-list navigation-list--nojs navigation-list--active navigation-list--closed">
-            <li class="navigation-list__item navigation-list__item--index"><a class="navigation-list__link navigation-list__link--active" href="index.html">Главная</a></li>
-            <li class="navigation-list__item navigation__item--photo"><a class="navigation-list__link" href="photo.html">Фотографии</a></li>
-            <li class="navigation-list__item navigation__item--draw"><a class="navigation-list__link" href="form.html">Конкурс</a></li>
-            <li class="navigation-list__item navigation__item--academy"><a class="navigation-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+            <li class="navigation-list__item"><a class="navigation-list__link" href="index.html">Главная</a></li>
+            <li class="navigation-list__item"><a class="navigation-list__link navigation-list__link--active" href="photo.html">Фотографии</a></li>
+            <li class="navigation-list__item"><a class="navigation-list__link" href="form.html">Конкурс</a></li>
+            <li class="navigation-list__item"><a class="navigation-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
@@ -96,8 +91,8 @@
       <article class="blog blog--best">
         <span class="blog__marker">Панорама дня</span>
         <picture>
-          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x" alt="user-photo" width="700" height="509">
-          <source media="(min-width: 760px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x" alt="user-photo" width="700" height="509">
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
           <img class="blog__img blog__img--first" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="user-photo" width="320" height="137">
         </picture>
         <div class="blog__best-description">
@@ -110,7 +105,7 @@
               <p class="blog__text blog__text--best">Прыгать или нет? Напишите
                 в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <div class="blog__counter blog__counter--best">
-                <button class="blog__like-btn blog__like-btn--best" type="button" name="button"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px"
+                <button class="blog__like-btn blog__like-btn--best" type="button" name="button"><svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px"
                     height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                     <g>
                       <path
@@ -128,8 +123,8 @@
         <article class="blog">
           <div class="blog__inner blog-wrapper">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x" alt="user-photo" width="700" height="509">
-              <source media="(min-width: 760px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x" alt="user-photo" width="300" height="300">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 760px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
               <img class="blog__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
             <div class="wrapper-description">
@@ -139,7 +134,7 @@
               </div>
               <p class="blog__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="blog__counter">
-                <button class="blog__like-btn" type="button" name="button"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
+                <button class="blog__like-btn" type="button" name="button"><svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
                     viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                     <g>
                       <path
@@ -154,10 +149,11 @@
         </article>
         <article class="blog">
           <div class="blog__inner blog-wrapper">
-            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x" alt="user-photo" width="700" height="509">
-            <source media="(min-width: 760px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x" alt="user-photo" width="300" height="300">
+            <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
             <img class="blog__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="user-photo">
-
+          </picture>
             <div class="wrapper-description">
               <div class="blog__string">
                 <h4 class="blog__title">Антон</h4>
@@ -165,7 +161,7 @@
               </div>
               <p class="blog__text">Соседи будут рады!</p>
               <div class="blog__counter">
-                <button class="blog__like-btn" type="button" name="button"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
+                <button class="blog__like-btn" type="button" name="button"><svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
                     viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                     <g>
                       <path
@@ -181,12 +177,11 @@
         <article class="blog">
           <div class="blog__inner blog-wrapper">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x" alt="user-photo" width="700" height="509">
-              <source media="(min-width: 760px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x" alt="user-photo" width="300" height="300">
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 760px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
 
               <img class="blog__img blog__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
-
             <div class="wrapper-description">
               <div class="blog__string">
                 <h4 class="blog__title">Борис</h4>
@@ -194,7 +189,7 @@
               </div>
               <p class="blog__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="blog__counter">
-                <button class="blog__like-btn" type="button" name="button"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
+                <button class="blog__like-btn" type="button" name="button"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
                     viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                     <g>
                       <path
@@ -210,12 +205,10 @@
         <article class="blog">
           <div class="blog__inner blog-wrapper">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x" alt="user-photo" width="700" height="509">
-              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x" alt="user-photo">
-
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
               <img class="blog__img blog__img--mob" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
-
             <div class="wrapper-description">
               <div class="blog__string">
                 <h4 class="blog__title">Сергей</h4>
@@ -223,7 +216,7 @@
               </div>
               <p class="blog__text">Самая кубанская в мире!</p>
               <div class="blog__counter">
-                <button class="blog__like-btn" type="button" name="button"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
+                <button class="blog__like-btn" type="button" name="button"><svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
                     viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                     <g>
                       <path
@@ -239,12 +232,10 @@
         <article class="blog">
           <div class="blog__inner blog-wrapper">
             <picture>
-              <source media="(min-width: 760px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x" alt="user-photo" width="700" height="509">
-              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x" alt="user-photo" width="300" height="300">
-
+              <source media="(min-width: 760px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
               <img class="blog__img blog__img--mob" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
-
             <div class="wrapper-description">
               <div class="blog__string">
                 <h4 class="blog__title">Максим</h4>
@@ -252,7 +243,7 @@
               </div>
               <p class="blog__text">Где снег-то?</p>
               <div class="blog__counter">
-                <button class="blog__like-btn" type="button" name="button"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
+                <button class="blog__like-btn" type="button" name="button"><svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
                     viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                     <g>
                       <path
@@ -268,12 +259,10 @@
         <article class="blog">
           <div class="blog__inner blog-wrapper">
             <picture>
-
-              <img class="blog__img blog__img--mob" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="user-photo">
-              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x" alt="user-photo" width="300" height="300">
-              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x" alt="user-photo" width="700" height="509">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+                <img class="blog__img blog__img--mob" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
-
             <div class="wrapper-description">
               <div class="blog__string">
                 <h4 class="blog__title">Надежда </h4>
@@ -281,7 +270,7 @@
               </div>
               <p class="blog__text">Всем GM и взаимные лайки!</p>
               <div class="blog__counter">
-                <button class="blog__like-btn" type="button" name="button"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
+                <button class="blog__like-btn" type="button" name="button"><svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px"
                     viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                     <g>
                       <path
@@ -299,57 +288,47 @@
     <p class="intro__description intro__description--bottom">Затмите их всех! <br>
       Выкладывайте все, что накопилось в телефоне!</p>
     <section class="edit">
-      <div class="edit__inner">
+      <form class="edit__inner">
         <picture>
-          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x" alt="user-photo" width="700" height="509">
-          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x" alt="user-photo" width="300" height="300">
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
           <img class="edit__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" alt="пример результатов настройки">
-
-
         </picture>
         <div class="edit__list-wrap">
           <ul class="edit__list">
             <li class="edit__item edit__item--crop">
               <a href="#" class="edit__link edit__link--active">
-                <svg class="edit__svg edit__svg--crop" >
-                  <use xlink:href="#crop"></use>
+                <svg class="edit__svg edit__svg--crop">
+                  <use xlink:href="#icon-editor-crop"></use>
                 </svg></a>
             </li>
             <li class="edit__item edit__item--fill">
               <a href="#" class="edit__link">
                 <svg class="edit__svg edit__svg--fill" width="48" height="48">
-                  <use xlink:href="#fill"></use>
-                </svg></a>
+                  <use xlink:href="#icon-editor-fill"></use>
+                </svg>
+              </a>
             </li>
             <li class="edit__item edit__item--contrast">
               <a href="#" class="edit__link">
-                <!-- <svg class="edit__svg edit__svg--contrast"  width="48" height="48">
-                <use xlink:href="#contrast"></use>
-              </svg> -->
-                <svg class="edit__svg edit__svg--contrast" version="1.0" xmlns="http://www.w3.org/2000/svg" width="31.92" height="31.92" viewBox="-35.422 -7.96 31.92 31.92">
-                  <path fill="#231F20"
-                    d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z" />
-                  <path d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519" /></svg>
+                <svg class="edit__svg edit__svg--contrast" width="48" height="48">
+                  <use xlink:href="#icon-editor-contrast"></use>
+                </svg>
               </a> </li>
           </ul>
-          <!-- <div class="edit__gradient">
-
-          </div> -->
-  <div class="edit__buttons">
-    <button class="edit__button edit__button--yes" type="button" name="button">Запостить</button>
-    <button  class="edit__button edit__button--no" type="button" name="button">Отмена</button>
-  </div>
+          <div class="edit__buttons">
+            <button class="edit__button edit__button--yes" type="button" name="button">Запостить</button>
+            <button class="edit__button edit__button--no" type="button" name="button">Отмена</button>
+          </div>
         </div>
-
-      </div>
-
+      </form>
     </section>
   </main>
   <!-- footer -->
   <footer class=" footer__photo footer">
     <div class="footer__inner">
       <a class="logo__footer" href="index.html">
-        <svg class="logo__footer-pic logo__footer-pic--mob" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"
+        <svg class="logo__footer-pic logo__footer-pic--mob" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"
           enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>
             <path class="logo-path" fill="#283645"
@@ -364,7 +343,7 @@
           <path fill="#D22856"
             d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z" />
         </svg>
-        <svg class="logo__footer-pic logo__footer-pic--desk" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"
+        <svg class="logo__footer-pic logo__footer-pic--desk" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375"
           enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>
             <path class="logo-path" fill="#283645"
@@ -402,7 +381,7 @@
         <span class="visually-hidden">Pink</span>
       </a>
       <ul class="social-list">
-        <li class="social-list__item"><a class="social-list__link social-list__link--twitter" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px"
+        <li class="social-list__item"><a class="social-list__link social-list__link--twitter" href="#"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px"
               height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
               <g id="W6EeEF_1_">
                 <g>
@@ -412,13 +391,13 @@
               </g>
             </svg>
             <span class="visually-hidden">twitter</span></a></li>
-        <li class="social-list__item"><a class="social-list__link social-list__link--facebook" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px"
+        <li class="social-list__item"><a class="social-list__link social-list__link--facebook" href="#"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px"
               height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
               <path
                 d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z" />
             </svg>
             <span class="visually-hidden">facebook</span></a></li>
-        <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px"
+        <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#"><svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px"
               height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
               <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z" />
             </svg>
@@ -430,13 +409,8 @@
         </svg>
       </a>
     </div>
-
-
   </footer>
+  <script src="js/toggle-nav.js">
+  </script>
 </body>
-
-</html>
-<script src="js/toggle-nav.js">
-</script>
-
 </html>
