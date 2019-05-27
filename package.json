@@ -20,7 +20,7 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "merge": "^1.2.1",
-    "posthtml-include": "^1.2.1",
+    "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },

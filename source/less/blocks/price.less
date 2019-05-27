@@ -112,7 +112,7 @@
   &--no {
     padding-top: 13px;
     padding-bottom: 14px;
-    padding-left: 16px;
+    padding-left: 22px;
   }
 
   &--yes {
@@ -173,11 +173,62 @@
   }
 }
 
+@media (max-width: 659px) {
+  .price {
+    padding-top: 77px;
+    padding-bottom: 84px;
+  }
+
+  .price__detail-item {
+    &--name {
+      padding-top: 16px;
+    }
+
+    &--tab {
+      &::before {
+        background-size: auto;
+      }
+
+      &::after {
+        top: 15px;
+        left: 9px;
+        font-size: 14px;
+      }
+    }
+
+    &--no {
+      background-position: 93%;
+    }
+  }
+
+  .price__detail-list {
+    width: 278px;
+
+    li {
+      &:last-child {
+        padding-top: 16px;
+      }
+    }
+  }
+
+  .price__slide {
+    &::before {
+      top: 45px;
+    }
+
+    &--slide2 {
+      &::before {
+        top: 42px;
+      }
+    }
+  }
+}
+
 @media (min-width: 660px) {
   .price {
     margin-top: 65px;
-    padding-top: 70px;
-    padding-bottom: 20px;
+    padding-top: 74px;
+    padding-bottom: 51px;
   }
 
   .price__item {
@@ -188,6 +239,9 @@
 
   .price__title {
     font-size: 16px;
+    padding-top: 4px;
+    padding-right: 4px;
+    line-height: 26px;
   }
 
   .price__row-name {
@@ -205,11 +259,10 @@
   }
 
   .price__detail-item {
-    min-width: 154px;
-    // margin-left: 15px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 10px;
+    min-width: 157px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+    padding-left: 15px;
     text-transform: none;
     background-position: center;
 
@@ -221,15 +274,28 @@
     }
 
     &--name {
-      padding-top: 16px;
-      padding-bottom: 4px;
+      padding-top: 9px;
+      padding-bottom: 10px;
+      padding-left: 10px;
     }
+    &--tab{
+      &::after{
+        top: 7px;
+        left: 7px;
+        font-size: 15px;
+      }
+    }
+  }
+  .price__worth{
+    padding-right: 9px;
   }
 }
 
 @media (min-width: 960px) {
   .price {
-    padding-top: 169px;
+    padding-top: 161px;
+    margin-top: 28px;
+    padding-bottom: 71px;
   }
 
   .price__list {
@@ -246,18 +312,40 @@
   }
 
   .price__detail-item {
-    height: 63px;
-    padding-top: 16px;
+    height: 61px;
+    padding-top: 14px;
 
     &--name {
-      height: 94px;
+      height: 99px;
       padding-bottom: 21px;
     }
   }
 
   .price__row-name {
     display: block;
-    padding-left: 13px;
+    padding-left: 14px;
     font-size: 18px;
+  }
+
+  .price__worth {
+    display: inline-block;
+    padding-left: -25px;
+    padding-right: 14px;
+    padding-top: 2px;
+    font-size: 24px;
+
+    &--first {
+      padding-right: 7px;
+    }
+  }
+
+  .price__title {
+    font-size: 18px;
+    padding-right: 16px;
+    letter-spacing: 0.2px;
+
+    &--first {
+      padding-right: 5px;
+    }
   }
 }
