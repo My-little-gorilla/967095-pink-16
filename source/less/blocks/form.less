@@ -6,6 +6,10 @@
   .inner();
 }
 
+.form__note-transparent {
+  display: none;
+}
+
 .form__icon-yes {
   fill: #d22856;
 }
@@ -38,6 +42,7 @@
 
   &--comment {
     margin-bottom: 4px;
+    height: 203px;
   }
 }
 
@@ -82,12 +87,12 @@
 
   &--comment {
     padding-top: 30px;
-    padding-bottom: 36px;
+    padding-bottom: 41px;
   }
 }
 
 .form__area-wrapper {
-  padding-top: 15px;
+  padding-top: 18px;
   padding-left: 0;
   display: flex;
   justify-content: center;
@@ -222,6 +227,10 @@
   }
 }
 
+.form__btn-wrap {
+  padding-top: 7px;
+}
+
 .form__btn {
   display: block;
   width: 276px;
@@ -289,29 +298,38 @@
     }
 
     &--contacts {
+      margin-top: -4px;
       align-items: stretch;
       order: 3;
-      padding-top: 32px;
       padding-bottom: 0;
     }
 
     &--software {
       width: 100%;
-      padding-top: 45px;
       margin-bottom: 62px;
+      padding-top: 48px;
+      padding-left: 62px;
     }
 
     &--comment {
       order: 5;
-      padding-bottom: 33px;
+      padding-bottom: 36px;
     }
 
     &--check {
       width: 100%;
       padding-left: 40px;
-      padding-top: 49px;
+      padding-top: 36px;
       padding-bottom: 0;
       margin-bottom: 69px;
+
+      .form__title {
+        width: 425px;
+        padding-left: 22px;
+        background-color: #ffffff;
+        top: -48px;
+        left: 11px;
+      }
     }
   }
 
@@ -322,7 +340,11 @@
 
     &--check {
       order: 4;
-      margin-top: 47px;
+      margin-top: 58px;
+    }
+
+    &--dev {
+      padding-top: 1px;
     }
   }
 
@@ -352,6 +374,7 @@
       width: auto;
       margin: 0;
       margin-right: 21px;
+      margin-bottom: 8px;
       padding: 0;
     }
 
@@ -362,6 +385,7 @@
 
     &--device {
       padding-left: 36px;
+      margin-bottom: 44px;
 
       &:last-child {
         margin-bottom: 52px;
@@ -369,22 +393,34 @@
     }
 
     &--contacts {
-      margin-left: 0;
-      padding-top: 10px;
+      margin-left: -3px;
+      padding-top: 9px;
       padding-bottom: 26px;
     }
 
     &--comment {
       position: relative;
       top: -25px;
-      left: 117px;
-      width: 220px;
+      left: 120px;
+      width: 184px;
+      padding-left: 35px;
+      padding-right: 35px;
+      margin: 0;
       background-color: #ffffff;
     }
 
     &--email {
       order: 4;
     }
+  }
+
+  .form__indicator-radio:checked + label::after {
+    left: -12px;
+    top: 8px;
+  }
+
+  .form__indicator-radio + label::before {
+    left: -24px;
   }
 
   .form__indicator + label {
@@ -413,6 +449,11 @@
 
     &--comment {
       height: 192px;
+      margin-top: 7px;
+    }
+
+    &--identity {
+      padding: 16px 10px 14px 17px;
     }
   }
 
@@ -426,8 +467,8 @@
   .form__box {
     display: flex;
     flex-direction: column;
-    padding-right: 22px;
-    padding-left: 22px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .form__butn-wrap {
@@ -435,6 +476,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 68px;
+  }
+
+  .form__fieldset {
+    &--contacts {
+      padding-top: 30px;
+    }
   }
 
   .form__btn {
@@ -460,8 +507,8 @@
       content: "";
       width: 61px;
       height: 62px;
-      top: 0;
-      right: -4px;
+      top: 2px;
+      right: 1px;
       background-color: #e5e5e5;
       background-repeat: no-repeat;
       background-position: center;
@@ -512,13 +559,14 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-top: 16px;
+      margin-top: 14px;
       padding-left: 56px;
     }
 
     &--comment {
       flex-basis: 100%;
       padding-bottom: 42px;
+      padding-top: 10px;
     }
 
     &--check {
@@ -531,24 +579,29 @@
       padding-right: 0;
       padding-left: 60px;
       padding-top: 53px;
-      padding-bottom: 4px;
+      padding-bottom: 9px;
+      margin-bottom: 66px;
 
       .form__title {
         position: absolute;
         top: -12px;
-        left: 258px;
+        left: 256px;
         background-color: #ffffff;
+        padding-left: 0;
+        padding-right: 0;
       }
     }
 
     &--software {
       width: 437px;
-      padding-left: 23px;
+      padding-left: 26px;
       padding-right: 23px;
+      padding-top: 52px;
       box-sizing: border-box;
 
       .form__title {
         width: 377px;
+        padding-left: 21px;
       }
     }
   }
@@ -568,6 +621,10 @@
     &--dev {
       padding-top: 36px;
     }
+
+    &--identity {
+      padding-top: 7px;
+    }
   }
 
   .form__text-fields {
@@ -580,6 +637,7 @@
   .form__label {
     &--identity {
       margin-left: 0;
+      margin-bottom: 0;
     }
 
     &--tel {
@@ -603,7 +661,8 @@
     }
 
     &--contacts {
-      padding-bottom: 16px;
+      padding-bottom: 13px;
+      margin-left: -1px;
     }
 
     &--check {
@@ -616,10 +675,12 @@
 
     &--2 {
       order: 2;
+      margin-left: 18px;
     }
 
     &--3 {
       order: 3;
+      margin-right: 9px;
     }
 
     &--4 {
@@ -628,10 +689,12 @@
 
     &--5 {
       order: 5;
+      margin-left: 18px;
     }
 
     &--6 {
       order: 6;
+      margin-right: 9px;
     }
 
     &--comment {
@@ -673,6 +736,7 @@
 
   .form__butn-wrap {
     width: 940px;
+    margin-top: 66px;
   }
 
   .form__indicator-radio + label::before {
@@ -687,7 +751,25 @@
 
   .form__field-text {
     &--contacts {
-      width: 370px;
+      width: 372px;
+    }
+  }
+
+  .form__input-wrapper::after {
+    width: 62px;
+    height: 63px;
+    top: 0;
+    right: -4px;
+  }
+
+  .form__input-wrapper--email::after {
+    background-position-x: 43%;
+  }
+
+  .form__note {
+    .form__note-transparent {
+      display: inline;
+      color: #000000;
     }
   }
 }

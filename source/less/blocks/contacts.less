@@ -50,48 +50,64 @@
   font-size: 24px;
   font-weight: 300;
 }
+
+@media (min-width: 659px), (max-width: 990px) {
+  .contacts__triangle {
+    height: 88px;
+    background-size: 125% 100%;
+  }
+}
+
 @media (max-width: 659px) {
   .contacts {
     padding-top: 5px;
   }
-  .contacts__title{
+
+  .contacts__title {
     margin-bottom: 33px;
   }
-  .contacts__item{
-    &:first-child{
+
+  .contacts__item {
+    &:first-child {
       padding-top: 5px;
     }
-    &--email{
+
+    &--email {
       padding-left: 6px;
     }
-    &--address{
-      .contacts__name{
+
+    &--address {
+      .contacts__name {
         margin-bottom: 6px;
       }
     }
   }
-  .contacts__info{
+
+  .contacts__info {
     margin-bottom: 25px;
   }
-  .contacts__name{
-    &--email{
+
+  .contacts__name {
+    &--email {
       margin-bottom: 5px;
     }
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 6px;
     }
-
   }
-  .contacts__triangle{
+
+  .contacts__triangle {
     height: 48px;
     background-size: 131% 100%;
   }
 }
 
 @media (min-width: 660px) {
-  .contacts{
+  .contacts {
     padding-top: 10px;
   }
+
   .contacts__title {
     width: 376px;
     margin-bottom: 45px;
@@ -112,7 +128,7 @@
 
   .contacts__item {
     &:last-child {
-      margin-top: 47px;
+      margin-top: 39px;
 
       .contacts__info {
         width: 212px;
@@ -122,9 +138,27 @@
 
   .contacts__info {
     margin-bottom: 10px;
+
+    &--phone {
+      padding-right: 23px;
+    }
+
+    &--email {
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
   }
-  .contacts__name{
+
+  .contacts__name {
     margin-bottom: 9px;
+
+    &--phone {
+      padding-right: 26px;
+    }
+
+    &--email {
+      padding-left: 8px;
+    }
   }
 }
 
@@ -160,11 +194,18 @@
 
     &:last-child {
       margin-top: 17px;
-      padding-right: 6px;
+      padding-right: 56px;
+      box-sizing: border-box;
     }
 
     &--email {
       order: 3;
+    }
+
+    &--address {
+      .contacts__name {
+        padding-right: 0;
+      }
     }
   }
 
@@ -173,13 +214,13 @@
 
     &--email {
       width: 100%;
-      padding-right: 69px;
+      padding-right: 32px;
     }
   }
 
   .contacts__name {
     &--email {
-      padding-right: 3px;
+      padding-right: 34px;
     }
   }
 }
